@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
   }
   
   /* Gives the body element a parent height to compare against */
@@ -12,7 +13,7 @@
   
   body {
     min-height: 100%;
-    line-height: 1;
+    line-height: 1.5;
     font-family: sans-serif;
   }
   
