@@ -9,19 +9,41 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
+<div class="main page">
     <header>
-        <div id="high-scores">
-            <button>View Highscores</button>
-        </div>
+        <a href="#" id="high-scores">
+            <p>View Highscores</p>
+        </a>
         <div>
             <h4>Time: <span id="time">0</span></h4>
         </div>
     </header>
-    <main>
+
+    <main id = "start-page">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following questions within the time limit. 
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-         <button id="start-quiz">Start Quiz!</button>
+         <button id="start">Start Quiz!</button>
     </main>
+</div>
+
+ <div id ="questions" class="hide">
+     <h2 id = "question-title"></h2>
+     <div id="choices" class="choices"></div>
+ </div>
+
+ <div id="questions" class="hide">
+    <h2>Finished!</h2>
+    <p>Your final score is <span id="final-score"></span>.</p>
+    <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+    </p>
+ </div>
+
+ <div id="feedback" class="feedback hide"></div>
+
+ <script src=""></script>
+ <script src=""></script>
 </body>
 </html>
