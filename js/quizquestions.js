@@ -27,7 +27,7 @@ var quizQuestions = [
 {
     title: "From the given array which index is the letter 'b' on? ['a', 'b', 'c', 'd']",
     choices: ["0", "1", "2", "3"],
-    answer: "0"
+    answer: "1"
 },
 
 {
