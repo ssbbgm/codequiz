@@ -9,12 +9,14 @@ let submitBtn = document.querySelector('submit');
 let feedbackEl = document.querySelector('#feedback');
 
 
-
 startBtn.addEventListener("onclick", startQuiz);
 
 function startQuiz () {
-    let startPageEl = document.getElementById("#Start-page");
+    let startPageEl = document.getElementById("#start-page");
+    
     startPageEl.setAttribute("class", "hide");
+
+    startPageEl.setAttribute("style", "display:none");
 
     questionsEl.removeAttribute("class");
 
@@ -22,6 +24,5 @@ function startQuiz () {
 
     timerEl.textContent = time;
 
-    getQuiz();
 }
 
