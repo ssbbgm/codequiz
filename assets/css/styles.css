@@ -21,10 +21,6 @@ header a p {
     color: #fff;
 }
 
-#time {
-    color: #fff;
-}
-
 main {
    padding: 10%;
 }
@@ -60,15 +56,90 @@ h1, p {
     display: none;
 }
 
-/* questions stlying  */
+/* questions styling start */
 .box  {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
     min-height: 350px;
     margin-right: 0;
+    padding: 50px;
 }
 
-.quiz-title {
-    
+#quiz-title {
+    border-bottom: 1px solid #464646;
+    color: #464646;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.quiz-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.scoreBox, .timeBox {
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 1px solid #444;
+    color: #444;
+
+}
+
+.question-box {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+}
+
+.choices span {
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 10px 15px;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quiz-footer button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding: 7px 15px;
+    font-size: 20px;
+}
+
+/* questions styling end */
+
+@media screen and (max-width : 768px){
+    .container, .box {
+        width: 425px;
+        height: 100%;
+    }
+
+    .choices {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-footer button {
+        margin: 0px 10px 10px 0px;
+        font-size: 14px;
+    }
 }

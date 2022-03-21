@@ -10,11 +10,37 @@
 </head>
 <body>
 
+    <!-- Quiz Box -->
 <div class="container">
  <div class ="box" class= "hide">
      <h2 id = "quiz-title">JavaScript Quiz</h2>
-     <div id="questions"></div>
-     <div id="choices" class="choices"></div>
+    <div class="quiz-header">
+        <div class="scoreBox">Score: <span id="score">0</span></div>
+        <div class="timeBox">Time Left: <span id="time">0</span></div>
+    </div>
+    <div id="questions" class="question-box">
+        Inside the HTML document, where do you place your JavaScript code?
+     </div>
+     <div id="choices" class="choices">
+        <span>Inside the head element</span>
+        <span>Inside the script element</span>
+        <span>Inside the link element</span>
+        <span>Inside the footer element</spam>
+     </div>
+
+     <div class="quiz-footer">
+         <button>
+             Next Question
+         </button>
+         <button>
+             Exit Quiz
+         </button>
+         <button>
+             View High Scores
+         </button>
+     </div>
+
+    </div>
  </div>
 </div>
 

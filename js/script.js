@@ -8,21 +8,8 @@ let initialSubmit = document.querySelector('#intials');
 let submitBtn = document.querySelector('submit');
 let feedbackEl = document.querySelector('#feedback');
 
+$(function (){
 
-startBtn.addEventListener("onclick", startQuiz);
 
-function startQuiz () {
-    let startPageEl = document.getElementById("#start-page");
-    
-    startPageEl.setAttribute("class", "hide");
-
-    startPageEl.setAttribute("style", "display:none");
-
-    questionsEl.removeAttribute("class");
-
-    timerID = setInterval(startTime, 1000);
-
-    timerEl.textContent = time;
-
-}
+});
 
