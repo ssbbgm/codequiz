@@ -1,4 +1,4 @@
-//Questions taken from Assessment from Trilogy Bootcamps
+ -A//Questions taken from Assessment from Trilogy Bootcamps
 var quizQuestions = [
 {
     title: "Inside the HTML document, where do you place your JavaScript code?",

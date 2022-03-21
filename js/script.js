@@ -1,10 +1,27 @@
 // DOM elements
 
-var timerEl = document.querySelector('time');
-var startBtn = document.querySelector('#start');
-var questionsEl = document.querySelector('#questions');
-var choicesEl = document.querySelector('#choices');
-var initialSubmit = document.querySelector('#intials');
-var submitBtn = document.querySelector('submit');
-var feedbackEl = document.querySelector('#feedback');
+let timerEl = document.querySelector('#time');
+let startBtn = document.querySelector('#start');
+let questionsEl = document.querySelector('#questions');
+let choicesEl = document.querySelector('#choices');
+let initialSubmit = document.querySelector('#intials');
+let submitBtn = document.querySelector('submit');
+let feedbackEl = document.querySelector('#feedback');
+
+
+
+startBtn.addEventListener("onclick", startQuiz);
+
+function startQuiz () {
+    let startPageEl = document.getElementById("#Start-page");
+    startPageEl.setAttribute("class", "hide");
+
+    questionsEl.removeAttribute("class");
+
+    timerID = setInterval(startTime, 1000);
+
+    timerEl.textContent = time;
+
+    getQuiz();
+}
 
