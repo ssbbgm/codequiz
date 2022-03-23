@@ -8,8 +8,25 @@ let initialSubmit = document.querySelector('#intials');
 let submitBtn = document.querySelector('submit');
 let feedbackEl = document.querySelector('#feedback');
 
-$(function (){
 
+let totalTime = 200;
+let seconds = 0;
 
-});
+function setCounterText() {
+    timeEl.textContent = time;
+  }
 
+startBtn.onclick = function startTime (){
+
+    var timeInterval = setInterval(function () {
+        //
+        // YOUR CODE HERE
+        //
+        counter++;
+        let seconds = totalTime - counter;
+        
+
+      }, 1000);
+}
+
+setCounterText();
