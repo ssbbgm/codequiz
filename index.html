@@ -18,50 +18,42 @@
             <h4>Time: <span id="time">0</span></h4>
         </div>
     </header>
-
-    <main id = "start-page">
+<main>
+    <div id = "start-page">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following questions within the time limit. 
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-        <a>
-         <button id="start">Start Quiz!</button>
+        <a href="" id="start">
+        <button>Start Quiz!</button>
         </a>
+    </div>
+        <div class="container" class= "hide">
+            <h2 id = "quiz-title">JavaScript Quiz</h2>
+               <div class="quiz-header">
+                   <p class="scoreBox">Score: <span id="score">0</span></p>
+               <div id="questions" class="question-box">
+                   Inside the HTML document, where do you place your JavaScript code?
+                </div>
+                <div id="choices">
+                   <span>Inside the head element</span>
+                   <span>Inside the script element</span>
+                   <span>Inside the link element</span>
+                   <span>Inside the footer element</spam>
+                </div>
+                <button>
+                Next Question
+                </button>
+                <button>
+                Exit Quiz
+                </button>
+            </div>
+        </div>
+        
+            <script src=""></script>
+        </div>
     </main>
 </div>
 
- <!-- Quiz Box -->
- <div class="container">
-    <div class ="box" class= "hide">
-        <h2 id = "quiz-title">JavaScript Quiz</h2>
-       <div class="quiz-header">
-           <div class="scoreBox">Score: <span id="score">0</span></div>
-           <div class="timeBox">Time Left: <span id="time">0</span></div>
-       </div>
-       <div id="questions" class="question-box">
-           Inside the HTML document, where do you place your JavaScript code?
-        </div>
-        <div id="choices" class="choices">
-           <span>Inside the head element</span>
-           <span>Inside the script element</span>
-           <span>Inside the link element</span>
-           <span>Inside the footer element</spam>
-        </div>
-   
-        <div class="quiz-footer">
-            <button>
-                Next Question
-            </button>
-            <button>
-                Exit Quiz
-            </button>
-            <button>
-                View High Scores
-            </button>
-        </div>
-   
-    
-    </div>
-</div>
 
  <script src="./js/questions.js"></script>
  <script src="./js/script.js"></script>

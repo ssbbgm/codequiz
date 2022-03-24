@@ -2,6 +2,7 @@
     /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 150vh;
 }
 
 header {
@@ -17,7 +18,15 @@ header {
     justify-content: space-around;
 }
 
-header a p {
+header a {
+    color: #fff;
+}
+
+#start-page {
+    display: none;
+}
+
+header h4 {
     color: #fff;
 }
 
@@ -30,16 +39,63 @@ h1 {
     color: #fff;
 }
 
-h1, p {
+h1 {
     margin-bottom: 20px;
 }
 
+.container p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
 .container {
-    width: 940px;
+    width: 100vh;
+    height: 150vh;
+    position: relative;
+    /* top: -50px; */
+}
+
+
+#quiz-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
-/* Styling of the Start Button  */
+
+#questions{ 
+    padding: 5px 10px;
+    font-size: 22px;
+}
+
+#choices {
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+
+#choices span {
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 10px 15px;
+}
+
+
+/* Styling of the Start Button 
 #start {
     font-size: 25px;
     font-weight: 500;
@@ -57,7 +113,7 @@ h1, p {
 }
 
 /* questions styling start */
-.box  {
+/* .box  {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
@@ -123,8 +179,8 @@ h1, p {
     border-radius: 5px;
     border: 1px solid #444;
     padding: 7px 15px;
-    font-size: 20px;
-}
+    font-size: 20px; */
+} */
 
 /* questions styling end */
 
