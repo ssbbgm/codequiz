@@ -1,5 +1,5 @@
 //Questions taken from Assessment from Trilogy Bootcamps
-var questions = [
+let questions = [
 {
     question: "Inside the HTML document, where do you place your JavaScript code?",
     choice1: "Inside the <head> element",
