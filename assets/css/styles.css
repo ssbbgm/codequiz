@@ -2,6 +2,7 @@
     /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
+    margin: 0 auto;
   
 }
 
@@ -9,7 +10,7 @@ body {
     background: #007bff;
     display: flex;
     align-items: center;
-    min-height: 150vh;
+    min-height: 0vw;
     max-width: 150vh;
     margin-right: 0px;
 }
@@ -56,7 +57,7 @@ h2 {
 }
 
 #quiz-box {
-    width: 100vh;
+    width: 100vw;
     height: 150vh;
     position: relative;
     /* top: -50px; */
@@ -70,17 +71,40 @@ h2 {
 
 }
 
-
 #questions{ 
     padding: 5px 10px;
     font-size: 22px;
 }
 
-#choices {
+/* This is the choice container */
+.choice-container  {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid black;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+.choice-prefix {
+    padding: 0.5rem 1.5rem;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+
+.choice-text {
+    position: relative;
+    padding: 0.5rem;
+}
+
+/* #choices {
     display: flex;
     padding: 2px;
     flex-direction: column;
     margin: 10px 0;
+    margin-bottom: 1.5 rem;
 }
 
 
@@ -90,7 +114,8 @@ h2 {
     border-radius: 10px;
     border: 1px solid #444;
     padding: 10px 15px;
-}
+    margin-bottom: 1.5 rem;
+} */
 
 
 /* Styling of the Start Button 
@@ -183,11 +208,11 @@ h2 {
 
 /* questions styling end */
 
-@media screen and (max-width : 1000px){
+@media screen and (max-width : 2200px){
     body {
       margin-right: 0px;
       justify-content: center;
-      min-height: auto;
+      max-width: 100%;
     }
 
     .choices {
