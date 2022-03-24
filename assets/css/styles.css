@@ -42,23 +42,20 @@ h1 {
     margin-bottom: 20px;
 }
 
-.quiz-box p {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
 h2 {
     font-size: 40px;
     color: #fff;
 }
+
+
 
 .hide {
     display: none;
 }
 
 #quiz-box {
-    width: 100vw;
-    height: 150vh;
+    width: 50vw;
+    height: 100vh;
     position: relative;
     /* top: -50px; */
 }
@@ -71,9 +68,9 @@ h2 {
 
 }
 
-#questions{ 
-    padding: 5px 10px;
-    font-size: 22px;
+#question { 
+    padding: 10px 5px;
+    font-size: 24px;
 }
 
 /* This is the choice container */
@@ -87,6 +84,13 @@ h2 {
     background-color: #ccc;
 }
 
+.choice-container:hover  {
+    cursor: pointer;
+    box-shadow: #fff;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+} 
+
 .choice-prefix {
     padding: 0.5rem 1.5rem;
     background-color: black;
@@ -97,6 +101,7 @@ h2 {
 .choice-text {
     position: relative;
     padding: 0.5rem;
+    width: 20rem;
 }
 
 /* #choices {
