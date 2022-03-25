@@ -13,11 +13,12 @@ let feedbackEl = document.querySelector('#feedback');
 console.log(choices);
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+//Question List
 let questions = [
   {
       question: "Inside the HTML document, where do you place your JavaScript code?",
@@ -117,7 +118,7 @@ let questions = [
       answer: 4
     },
     {
-      question: "What is the type of Pop up boxes available in JavaScript?:",
+      question: "What is the type of Pop up boxes available in JavaScript?",
       choice1: "Alert",
       choice2: "Confirm", 
       choice3: "Prompt", 
@@ -125,7 +126,7 @@ let questions = [
       answer: 4
     }
   ];
-
+//End of Question List
 
 //Creating the time function
 
@@ -168,6 +169,16 @@ function getNewQuestion () {
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
-} 
+  choices.forEach(choice => {
+    const number = choice.dataset['number'];
+    choice.innerText = currentQuestion['choice' + number];
+  });
+
+  availableQuestions.splice(questionIndex, 1);
+  acceptingAnswers = true;
+
+};
+
+choices.addEventListener
 
 startGame();
