@@ -164,6 +164,9 @@ function startGame (event) {
 
 
 function getNewQuestion () {
+  if (availableQuestions.length === 0 || questionCounter > acceptingAnswers.length) {
+    return window.location.assign('./scores.html');
+  }
   questionCounter++;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex];
@@ -175,10 +178,24 @@ function getNewQuestion () {
   });
 
   availableQuestions.splice(questionIndex, 1);
+
   acceptingAnswers = true;
 
 };
 
-choices.addEventListener
+choices.forEach(choice => {
+  choice.addEventListener('click', e => {
+    if(!acceptingAnswers) return;
+
+    acceptingAnswers = false;
+
+    const SelectedChoice = e.target;
+    const SelectedAnswer = SelectedChoice.dataset['number'];
+
+    getNewQuestion();
+  });
+
+
+});
 
 startGame();
