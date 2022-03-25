@@ -104,6 +104,14 @@ h2 {
     font-size: 1.5rem;
 }
 
+.correct {
+    background-color: chartreuse;
+}
+
+.incorrect {
+    background-color: crimson;
+}
+
 /* #choices {
     display: flex;
     padding: 2px;

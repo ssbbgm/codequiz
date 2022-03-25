@@ -8,15 +8,9 @@ let questionEl = document.getElementById('#question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 let initialSubmit = document.querySelector('#intials');
 let submitBtn = document.querySelector('#submit');
-let feedbackEl = document.querySelector('#feedback');
+let answerEl = document.querySelector('#answerStatus');
 
 console.log(choices);
-
-let currentQuestion = {};
-let acceptingAnswers = false;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
 
 //Question List
 let questions = [
@@ -128,15 +122,21 @@ let questions = [
   ];
 //End of Question List
 
+let currentQuestion = {};
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+let totalTime = questions.length * 15;
+
+
 //Creating the time function
 
-function countdown (){
-
-let totalTime = questions.length * 15;
+function countdown () {
 
 var timeLeft = setInterval(function () {
     // As long as the `timeLeft` is greater than 1
-    if (totalTime >= 1) {
+    if (totalTime > 0) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
       timerEl.textContent = totalTime;
       // Decrement `timeLeft` by 1
@@ -189,10 +189,27 @@ choices.forEach(choice => {
 
     acceptingAnswers = false;
 
-    const SelectedChoice = e.target;
-    const SelectedAnswer = SelectedChoice.dataset['number'];
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset['number'];
 
-    getNewQuestion();
+
+      if (selectedAnswer == currentQuestion.answer) {
+        answerEl.textContent = 'Correct';
+        answerEl.style.color =  'chartreuse';
+        answerEl.style.fontSize = '200%';
+
+      } else {
+      answerEl.textContent = 'Incorrect';
+      answerEl.style.color =  'crimson';
+      answerEl.style.fontSize = '200%';
+      totalTime-= 10;
+      }
+
+      setTimeout(function() {
+        answerEl.setAttribute("class", "hide");
+        getNewQuestion();
+      }, 1000);
+
   });
 
 
