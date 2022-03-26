@@ -136,7 +136,7 @@ function countdown () {
 
 var timeLeft = setInterval(function () {
     // As long as the `timeLeft` is greater than 1
-    if (totalTime > 0) {
+    if (totalTime >= 0) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
       timerEl.textContent = totalTime;
       // Decrement `timeLeft` by 1
@@ -177,7 +177,8 @@ function getNewQuestion () {
     choice.innerText = currentQuestion['choice' + number];
   });
 
-  availableQuestions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 0);
+  console.log(availableQuestions);
 
   acceptingAnswers = true;
 
@@ -192,12 +193,12 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset['number'];
 
-
+   
       if (selectedAnswer == currentQuestion.answer) {
         answerEl.textContent = 'Correct';
         answerEl.style.color =  'chartreuse';
         answerEl.style.fontSize = '200%';
-
+    
       } else {
       answerEl.textContent = 'Incorrect';
       answerEl.style.color =  'crimson';
