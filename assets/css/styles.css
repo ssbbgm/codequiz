@@ -90,12 +90,6 @@ h2 {
     transition: transform 150ms;
 } 
 
-.choice-prefix {
-    padding: 0.5rem 1.5rem;
-    background-color: black;
-    color: white;
-    position: absolute;
-}
 
 .choice-text {
     position: relative;
@@ -116,121 +110,6 @@ form {
     padding: 10px;
     margin: 15px 0px 15px 0px;
 }
-
-
-/* .correct {
-    background-color: chartreuse;
-}
-
-.incorrect {
-    background-color: crimson;
-} */
-
-/* #choices {
-    display: flex;
-    padding: 2px;
-    flex-direction: column;
-    margin: 10px 0;
-    margin-bottom: 1.5 rem;
-}
-
-
-#choices span {
-    background-color: #ccc;
-    color: #fff;
-    border-radius: 10px;
-    border: 1px solid #444;
-    padding: 10px 15px;
-    margin-bottom: 1.5 rem;
-} */
-
-
-/* Styling of the Start Button 
-#start {
-    font-size: 25px;
-    font-weight: 500;
-    color: #007bff;
-    padding: 15px 30px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-.hide {
-    display: none;
-}
-
-/* questions styling start */
-/* .box  {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-    min-height: 350px;
-    margin-right: 0;
-    padding: 50px;
-}
-
-#quiz-title {
-    border-bottom: 1px solid #464646;
-    color: #464646;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.quiz-header {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.scoreBox, .timeBox {
-    border-radius: 100px;
-    padding: 10px 15px;
-    border: 1px solid #444;
-    color: #444;
-
-}
-
-.question-box {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px 15px;
-}
-
-.choices {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 30px 0;
-    grid-gap: 15px;
-}
-
-.choices span {
-    background-color: #ccc;
-    color: #fff;
-    border-radius: 10px;
-    border: 1px solid #444;
-    padding: 10px 15px;
-}
-
-.quiz-footer {
-    display: flex;
-    justify-content: space-around;
-}
-
-.quiz-footer button {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #444;
-    padding: 7px 15px;
-    font-size: 20px;
-}*/
 
 
 /* questions styling end */
