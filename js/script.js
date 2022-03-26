@@ -165,6 +165,7 @@ function startGame (event) {
 
 function getNewQuestion () {
   if (availableQuestions.length === 0 || questionCounter > acceptingAnswers.length) {
+    localStorage.setItem("score", score);
     return window.location.assign('./scores.html');
   }
   questionCounter++;
