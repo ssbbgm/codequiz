@@ -177,7 +177,7 @@ function getNewQuestion () {
     choice.innerText = currentQuestion['choice' + number];
   });
 
-  availableQuestions.splice(questionIndex, 0);
+  availableQuestions.splice(questionIndex, 1);
   console.log(availableQuestions);
 
   acceptingAnswers = true;
@@ -198,6 +198,7 @@ choices.forEach(choice => {
         answerEl.textContent = 'Correct';
         answerEl.style.color =  'chartreuse';
         answerEl.style.fontSize = '200%';
+        score += 10;
     
       } else {
       answerEl.textContent = 'Incorrect';
@@ -205,6 +206,8 @@ choices.forEach(choice => {
       answerEl.style.fontSize = '200%';
       totalTime-= 10;
       }
+     
+      answerEl.removeAttribute('class');
 
       setTimeout(function() {
         answerEl.setAttribute("class", "hide");
@@ -212,8 +215,36 @@ choices.forEach(choice => {
       }, 1000);
 
   });
+});
 
+let highScores = document.getElementById('#high-scores')
+let initials = document.getElementById('#initials');
+let save = document.getElementById('#saveScore');
+
+
+function getScores() {
+  var playerInitials = localStorage.getItem("initials");
+  var highScores = localStorage.getItem("high-scores"); 
+
+  if (!playerInitials) {
+    return;
+  }
+
+  initials.textContent = initials;
+  highScores.textContent = highScores;
+}
+
+save.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  var playerInitials = document.querySelector("#initials").value;
+  localStorage.setItem("initials", playerInitials); 
+  localStorage.setItem('high-scores', scores)
+  console.log(playerInitials);
+  getScores();
 
 });
+
+
 
 startGame();
