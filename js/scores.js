@@ -1,6 +1,8 @@
 let saveScore = document.getElementById("saveScore");
 let initials = document.getElementById("initials");
 let clearScores = document.getElementById("clear");
+document.getElementById("high-scores-initials").innerHTML = "none";
+document.getElementById("high-scores").innerHTML = "0";
 
 saveScore.addEventListener("click", function (event) {
   event.preventDefault();
@@ -32,7 +34,17 @@ function loadScores() {
       document.getElementById("high-scores-initials").innerHTML = initial;
       document.getElementById("high-scores").innerHTML = max;
     }
+
+    clearScores.addEventListener('click', function(){
+        window.localStorage.removeItem('initials');
+        window.localStorage.removeItem('score');
+        window.localStorage.removeItem('previousScores')
+        document.getElementById("high-scores-initials").innerHTML = "none";
+        document.getElementById("high-scores").innerHTML = "0";
+    });
+
   });
 }
 
 loadScores();
+
