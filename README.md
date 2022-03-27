@@ -7,9 +7,9 @@ THis is a web-code quiz on JavaScript concepts. The player starts the game and i
 ## VISUALS
 
 
-![Project Start Page](./assets/images/passwordgenerator.png)
+![Project Start Page](./assets/images/code-quiz-start-page.png)
 
-![Demo of the project.](./assets/images/GIFS/8characterpw.gif)
+![Demo of the project.](./assets/images/hw4-quiz-demo.gif)
 
 ## POINTS OF INTEREST
 
@@ -27,15 +27,11 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
     
-[Voila!](https://media.giphy.com/media/Ws4gfyK51QwQTYpNCO/giphy.gif) 
+[Get ready to play!](https://media.giphy.com/media/Ws4gfyK51QwQTYpNCO/giphy.gif) 
 
 ## CONTRIBUTORS
 
-![It Me.](https://media.giphy.com/media/1rNXVaP18iF9r58m78/giphy.gif) 
-
-Also, shout out to my tutors for the assistance. They are the real MVPs! 
-
-![Salute](https://media.giphy.com/media/3oeT4JOH1i2Nf7rTmD/giphy.gif)
+![Ya girl.](https://media.giphy.com/media/iD6iDZFXQQagsmgmU1/giphy.gif) 
 
 
 ## DEPLOYED APPLICATION

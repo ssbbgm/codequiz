@@ -1,13 +1,10 @@
 // DOM elements
 
-let timerEl = document.querySelector('#time');
 let startBtn = document.querySelector('#start');
 let scoreEl = document.querySelector('#score');
 let quizScreen = document.querySelector('#quiz-box');
 let questionEl = document.getElementById('#question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-let initialSubmit = document.querySelector('#intials');
-let submitBtn = document.querySelector('#submit');
 let answerEl = document.querySelector('#answerStatus');
 
 console.log(choices);
