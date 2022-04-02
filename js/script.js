@@ -159,7 +159,7 @@ function startGame (event) {
     countdown();
 }
 
-
+//Code to get the questions
 function getNewQuestion () {
   if (availableQuestions.length === 0 || questionCounter > acceptingAnswers.length) {
     localStorage.setItem("score", score);
@@ -176,7 +176,6 @@ function getNewQuestion () {
   });
 
   availableQuestions.splice(questionIndex, 1);
-  console.log(availableQuestions);
 
   acceptingAnswers = true;
 
@@ -238,7 +237,6 @@ save.addEventListener("click", function(event) {
   var playerInitials = document.querySelector("#initials").value;
   localStorage.setItem("initials", playerInitials); 
   localStorage.setItem('high-scores', scores)
-  console.log(playerInitials);
   getScores();
 
 });
