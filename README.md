@@ -1,4 +1,4 @@
-# hw4-codequiz
+# Code Quiz
 
 # DESCRIPTION
 
@@ -36,5 +36,5 @@ THEN I can save my initials and my score
 
 ## DEPLOYED APPLICATION
 
-https://ssbbgm.github.io/hw4-codequiz/
+https://ssbbgm.github.io/codequiz/
 
